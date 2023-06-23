@@ -1,7 +1,7 @@
 #https://www.acmicpc.net/problem/2512 문제 사이트
 
 N = int(input())
-M = int(input("최대 예산 : "))
+M = 485
 list_N = []
 for i in range(N):
     value = int(input("값 : ")) #리스트에 정수형으로 저장
@@ -36,15 +36,15 @@ def Calculate(N,M,list_A, high):
             #마지막 결과값에서 1을 뺴줘서 상한값에 대한 값을 맞춤
         else:
             low = binary + 1#하한값 업데이트
-    return result
+    return high
 
 result = Calculate(N, M, list_N, high)
 
 print(result)
 
 
-
-
+#정상적으로 결과 출력
+#전체 국가 예산은 485로 고정이기에 변경
 
             
 

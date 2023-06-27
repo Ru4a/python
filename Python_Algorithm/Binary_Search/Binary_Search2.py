@@ -35,7 +35,6 @@ while True:
                 min_count = min_count + 1
             elif A[i][j] > X:
                 max_count = max_count + 1
-    print(X_min)
 
 
     if min_count > num_case1: #조건1 위반
